@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gold Authenticity Check</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#111;
+color:#f5d76e;
+text-align:center;
+padding-top:80px;
+}
+
+.box{
+border:2px solid #d4af37;
+display:inline-block;
+padding:40px;
+border-radius:12px;
+background:#1b1b1b;
+max-width:500px;
+}
+
+.loading{
+font-size:20px;
+margin-top:20px;
+}
+
+.result{
+display:none;
+margin-top:30px;
+font-size:22px;
+color:white;
+}
+
+.prank{
+display:none;
+margin-top:30px;
+font-size:28px;
+color:#ffcc00;
+font-weight:bold;
+}
+
+.lebaran{
+display:none;
+margin-top:40px;
+font-size:22px;
+color:#ffd700;
+}
+
+.gold{
+font-size:30px;
+color:#ffd700;
+font-weight:bold;
+}
+
+</style>
+
+<script>
+
+function startScan(){
+
+setTimeout(function(){
+document.getElementById("loading").innerHTML="Scanning purity 999.9...";
+},1500);
+
+setTimeout(function(){
+document.getElementById("loading").innerHTML="Checking serial number...";
+},3000);
+
+setTimeout(function(){
+document.getElementById("loading").style.display="none";
+document.getElementById("result").style.display="block";
+},4500);
+
+setTimeout(function(){
+document.getElementById("prank").style.display="block";
+},6500);
+
+setTimeout(function(){
+document.getElementById("lebaran").style.display="block";
+},8500);
+
+}
+
+</script>
+
+</head>
+
+<body onload="startScan()">
+
+<div class="box">
+
+<h2>Gold Authenticity Check</h2>
+
+<div id="loading" class="loading">
+Verifying Gold Bar...
+</div>
+
+<div id="result" class="result">
+
+<div class="gold">
+RESULT: AUTHENTIC
+</div>
+
+<br>
+
+Gold Type:<br>
+<strong>HANTAM GOLD</strong>
+
+<br><br>
+
+Weight:<br>
+10 Gram
+
+<br><br>
+
+Purity Level:<br>
+<strong>999.9</strong>
+
+</div>
+
+<div id="prank" class="prank">
+
+⚠ WARNING ⚠  
+THIS IS NOT ANTAM  
+
+THIS IS  
+
+😄 HANTAM 😄
+
+</div>
+
+<div id="lebaran" class="lebaran">
+
+✨ Selamat Idul Fitri ✨  
+
+Mohon Maaf Lahir dan Batin  
+
+Semoga kebahagiaan dan keberkahan  
+selalu menyertai kita.
+
+</div>
+
+</div>
+
+</body>
+</html>
